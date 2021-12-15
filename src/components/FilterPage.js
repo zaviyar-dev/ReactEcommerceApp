@@ -1,11 +1,12 @@
-import React, {useState} from 'react'
+import React, { useState } from 'react'
 
 const FilterPage = (props) => {
-    
+
     const [filterClass, setFilterClass] = useState('filter-page2')
+    // const [SearchItem, setSearchItem] = useState([])
     const showFilterPage = (e) => {
         e.preventDefault()
-        if (filterClass ==='filter-page2') {
+        if (filterClass === 'filter-page2') {
             setFilterClass('filter-page')
         } else {
             setFilterClass('filter-page2')
@@ -17,7 +18,6 @@ const FilterPage = (props) => {
                 <h1>Product Overview</h1>
                 <div>
                     <a onClick={showFilterPage} href="#">Filter</a>
-                   <input className="search-bar" type="text" placeholder="Search"/>
                 </div>
             </div>
             <div className={filterClass}>

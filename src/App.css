@@ -354,7 +354,7 @@ hr{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  width: 88vw;
+  width: 80vw;
 }
 .filter-page{
   overflow: hidden;
@@ -387,8 +387,8 @@ hr{
 }
 .product-heading > div > a{
   border: 1px solid rgb(165, 158, 158);
-  padding: 0.5vw 1vw;
-  font-size: 1vw;
+  padding: 0.5vw 5vw;
+  font-size: 1.2vw;
   border-radius: 0.2vw;
   margin: 0.2vw;
   transition: 0.3s ease;
