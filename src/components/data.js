@@ -15,7 +15,7 @@ const products = {
         {
             id: 3,
             img: 'imges/3.png',
-            text: 'Only Trouser',
+            text: 'Check Shirt',
             price: 30
         },
         {
@@ -27,49 +27,49 @@ const products = {
         {
             id: 5,
             img: 'imges/5.png',
-            text: 'Rufle Shirt',
+            text: 'Cut Shirt',
             price: 20
         },
         {
             id: 6,
             img: 'imges/6.png',
-            text: 'Herschel supply',
+            text: 'Short Shirt',
             price: 40
         },
         {
             id: 7,
             img: 'imges/7.png',
-            text: 'Only Trouser',
+            text: 'Watch',
             price: 30
         },
         {
             id: 8,
             img: 'imges/8.png',
-            text: 'Classic Coat',
+            text: 'Lose Trouser',
             price: 80
         },
         {
             id: 9,
             img: 'imges/9.png',
-            text: 'Rufle Shirt',
+            text: 'Shoes',
             price: 20
         },
         {
             id: 10,
             img: 'imges/10.png',
-            text: 'Herschel supply',
+            text: 'Shirt and Short',
             price: 40
         },
         {
             id: 11,
             img: 'imges/11.png',
-            text: 'Only Trouser',
+            text: 'Formal Shirt',
             price: 30
         },
         {
             id: 12,
             img: 'imges/12.png',
-            text: 'Classic Coat',
+            text: 'Belt',
             price: 80
         },
     ],
@@ -78,145 +78,169 @@ const products = {
             id: 1,
             img: 'imges/1.png',
             text: 'Rufle Shirt',
-            price: 20
+            price: 20,
+            catagory: 'women'
         },
         {
             id: 2,
             img: 'imges/2.png',
             text: 'Herschel supply',
-            price: 40
+            price: 40,
+            catagory: 'women'
         },
         {
             id: 3,
             img: 'imges/3.png',
-            text: 'Only Trouser',
-            price: 30
+            text: 'Check Shirt',
+            price: 30,
+            catagory: 'men'
         },
         {
             id: 4,
             img: 'imges/4.png',
             text: 'Classic Coat',
-            price: 80
+            price: 80,
+            catagory: 'women'
         },
         {
             id: 5,
             img: 'imges/5.png',
-            text: 'Rufle Shirt',
-            price: 20
+            text: 'Cut Shirt',
+            price: 20,
+            catagory: 'women'
         },
         {
             id: 6,
             img: 'imges/6.png',
-            text: 'Herschel supply',
-            price: 40
+            text: 'Short Shirt',
+            price: 40,
+            catagory: 'women'
         },
         {
             id: 7,
             img: 'imges/7.png',
-            text: 'Only Trouser',
-            price: 30
+            text: 'Watch',
+            price: 30,
+            catagory: 'other'
         },
         {
             id: 8,
             img: 'imges/8.png',
-            text: 'Classic Coat',
-            price: 80
+            text: 'Lose Trouser',
+            price: 80,
+            catagory: 'women'
         },
         {
             id: 9,
             img: 'imges/9.png',
-            text: 'Rufle Shirt',
-            price: 20
+            text: 'Shoes',
+            price: 20,
+            catagory: 'other'
         },
         {
             id: 10,
             img: 'imges/10.png',
-            text: 'Herschel supply',
-            price: 40
+            text: 'Shirt and Short',
+            price: 40,
+            catagory: 'women'
         },
         {
             id: 11,
             img: 'imges/11.png',
-            text: 'Only Trouser',
-            price: 30
+            text: 'Formal Shirt',
+            price: 30,
+            catagory: 'men'
         },
         {
             id: 12,
             img: 'imges/12.png',
-            text: 'Classic Coat',
-            price: 80
+            text: 'Belt',
+            price: 80,
+            catagory: 'other'
         },
         {
-            id: 1,
+            id: 13,
             img: 'imges/1.png',
             text: 'Rufle Shirt',
-            price: 20
+            price: 20,
+            catagory: 'women'
         },
         {
-            id: 2,
+            id: 14,
             img: 'imges/2.png',
             text: 'Herschel supply',
-            price: 40
+            price: 40,
+            catagory: 'women'
         },
         {
-            id: 3,
+            id: 15,
             img: 'imges/3.png',
-            text: 'Only Trouser',
-            price: 30
+            text: 'Check Shirt',
+            price: 30,
+            catagory: 'men'
         },
         {
-            id: 4,
+            id: 16,
             img: 'imges/4.png',
             text: 'Classic Coat',
-            price: 80
+            price: 80,
+            catagory: 'women'
         },
         {
-            id: 5,
+            id: 17,
             img: 'imges/5.png',
-            text: 'Rufle Shirt',
-            price: 20
+            text: 'cut Shirt',
+            price: 20,
+            catagory: 'women'
         },
         {
-            id: 6,
+            id: 18,
             img: 'imges/6.png',
-            text: 'Herschel supply',
-            price: 40
+            text: 'Short Shirt',
+            price: 40,
+            catagory: 'women'
         },
         {
-            id: 7,
+            id: 19,
             img: 'imges/7.png',
-            text: 'Only Trouser',
-            price: 30
+            text: 'Watch',
+            price: 30,
+            catagory: 'other'
         },
         {
-            id: 8,
+            id: 20,
             img: 'imges/8.png',
-            text: 'Classic Coat',
-            price: 80
+            text: 'Lose Trouser',
+            price: 80,
+            catagory: 'women'
         },
         {
-            id: 9,
+            id: 21,
             img: 'imges/9.png',
-            text: 'Rufle Shirt',
-            price: 20
+            text: 'Shoes',
+            price: 20,
+            catagory: 'other'
         },
         {
-            id: 10,
+            id: 22,
             img: 'imges/10.png',
-            text: 'Herschel supply',
-            price: 40
+            text: 'Shirt and Short',
+            price: 40,
+            catagory: 'women'
         },
         {
-            id: 11,
+            id: 23,
             img: 'imges/11.png',
-            text: 'Only Trouser',
-            price: 30
+            text: 'Formal Shirt',
+            price: 30,
+            catagory: 'men'
         },
         {
-            id: 12,
+            id: 24,
             img: 'imges/12.png',
-            text: 'Classic Coat',
-            price: 80
+            text: 'Belt',
+            price: 80,
+            catagory: 'other'
         },
     ]
     
@@ -248,40 +272,12 @@ const products = {
     ]
     let filterData = [
         {
-            h2: 'sort by',
-            p1: 'Default',
-            p2: 'Aopularity',
-            p3: 'Average Rating',
-            p4: 'Newnwess',
-            p5: 'Price: low to high',
-            p6: 'Price: high to low'
-        },
-        {
-            h2: 'Price',
-            p1: 'All',
-            p2: '$0.00-$500',
-            p3: '$500-$1000',
-            p4: '$1000-$2000',
-            p5: '$2000-$3000',
-            p6: '$3000-$4000'
-        },
-        {
-            h2: 'Color',
-            p1: 'Black',
-            p2: 'Blue',
-            p3: 'Grey',
-            p4: 'Green',
-            p5: 'Red',
-            p6: 'White'
-        },
-        {
-            h2: 'Tags',
-            p1: 'Fashion',
-            p2: 'craft',
-            p3: 'Style',
-            p4: 'New style',
-            p5: 'awesome style',
-            p6: 'stylish'
+            h2: 'Filter by Price',
+            p1: 'All Products',
+            p2: '$20-$30',
+            p3: '$30-$50',
+            p4: '$50-$70',
+            p5: '$70-$90'
         },
     ]
 

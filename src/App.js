@@ -21,6 +21,9 @@ import {blogData} from '../src/components/data'
 import {aboutData} from '../src/components/data'
 import {createContext} from 'react'
 import { CartProvider } from "react-use-cart"
+import Women from './components/Women'
+import Men from './components/Men'
+import Accessory from './components/Accessory'
 const productValues = createContext()
 const App = () => {
   return (
@@ -30,6 +33,15 @@ const App = () => {
         <Switch>
         <Route exact path='/signup'>
             <SingupPage />
+          </Route>
+        <Route exact path='/women'>
+            <Women />
+          </Route>
+        <Route exact path='/men'>
+            <Men />
+          </Route>
+        <Route exact path='/access'>
+            <Accessory />
           </Route>
           <Route exact path='/cart'>
           <CartProvider>
