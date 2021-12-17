@@ -61,8 +61,6 @@ const CateroryCard = () => {
                                 </div>
                             </Link>
                         </>
-                    
-                )
             </div>
         </>
     )

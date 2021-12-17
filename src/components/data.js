@@ -158,90 +158,90 @@ const products = {
             price: 80,
             catagory: 'other'
         },
-        {
-            id: 13,
-            img: 'imges/1.png',
-            text: 'Rufle Shirt',
-            price: 20,
-            catagory: 'women'
-        },
-        {
-            id: 14,
-            img: 'imges/2.png',
-            text: 'Herschel supply',
-            price: 40,
-            catagory: 'women'
-        },
-        {
-            id: 15,
-            img: 'imges/3.png',
-            text: 'Check Shirt',
-            price: 30,
-            catagory: 'men'
-        },
-        {
-            id: 16,
-            img: 'imges/4.png',
-            text: 'Classic Coat',
-            price: 80,
-            catagory: 'women'
-        },
-        {
-            id: 17,
-            img: 'imges/5.png',
-            text: 'cut Shirt',
-            price: 20,
-            catagory: 'women'
-        },
-        {
-            id: 18,
-            img: 'imges/6.png',
-            text: 'Short Shirt',
-            price: 40,
-            catagory: 'women'
-        },
-        {
-            id: 19,
-            img: 'imges/7.png',
-            text: 'Watch',
-            price: 30,
-            catagory: 'other'
-        },
-        {
-            id: 20,
-            img: 'imges/8.png',
-            text: 'Lose Trouser',
-            price: 80,
-            catagory: 'women'
-        },
-        {
-            id: 21,
-            img: 'imges/9.png',
-            text: 'Shoes',
-            price: 20,
-            catagory: 'other'
-        },
-        {
-            id: 22,
-            img: 'imges/10.png',
-            text: 'Shirt and Short',
-            price: 40,
-            catagory: 'women'
-        },
-        {
-            id: 23,
-            img: 'imges/11.png',
-            text: 'Formal Shirt',
-            price: 30,
-            catagory: 'men'
-        },
-        {
-            id: 24,
-            img: 'imges/12.png',
-            text: 'Belt',
-            price: 80,
-            catagory: 'other'
-        },
+        // {
+        //     id: 13,
+        //     img: 'imges/1.png',
+        //     text: 'Rufle Shirt',
+        //     price: 20,
+        //     catagory: 'women'
+        // },
+        // {
+        //     id: 14,
+        //     img: 'imges/2.png',
+        //     text: 'Herschel supply',
+        //     price: 40,
+        //     catagory: 'women'
+        // },
+        // {
+        //     id: 15,
+        //     img: 'imges/3.png',
+        //     text: 'Check Shirt',
+        //     price: 30,
+        //     catagory: 'men'
+        // },
+        // {
+        //     id: 16,
+        //     img: 'imges/4.png',
+        //     text: 'Classic Coat',
+        //     price: 80,
+        //     catagory: 'women'
+        // },
+        // {
+        //     id: 17,
+        //     img: 'imges/5.png',
+        //     text: 'cut Shirt',
+        //     price: 20,
+        //     catagory: 'women'
+        // },
+        // {
+        //     id: 18,
+        //     img: 'imges/6.png',
+        //     text: 'Short Shirt',
+        //     price: 40,
+        //     catagory: 'women'
+        // },
+        // {
+        //     id: 19,
+        //     img: 'imges/7.png',
+        //     text: 'Watch',
+        //     price: 30,
+        //     catagory: 'other'
+        // },
+        // {
+        //     id: 20,
+        //     img: 'imges/8.png',
+        //     text: 'Lose Trouser',
+        //     price: 80,
+        //     catagory: 'women'
+        // },
+        // {
+        //     id: 21,
+        //     img: 'imges/9.png',
+        //     text: 'Shoes',
+        //     price: 20,
+        //     catagory: 'other'
+        // },
+        // {
+        //     id: 22,
+        //     img: 'imges/10.png',
+        //     text: 'Shirt and Short',
+        //     price: 40,
+        //     catagory: 'women'
+        // },
+        // {
+        //     id: 23,
+        //     img: 'imges/11.png',
+        //     text: 'Formal Shirt',
+        //     price: 30,
+        //     catagory: 'men'
+        // },
+        // {
+        //     id: 24,
+        //     img: 'imges/12.png',
+        //     text: 'Belt',
+        //     price: 80,
+        //     catagory: 'other'
+        // },
     ]
     
 

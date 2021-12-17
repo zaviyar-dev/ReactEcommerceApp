@@ -397,11 +397,7 @@ hr{
 }
 .product-heading > div > a{
   border: 1px solid rgb(165, 158, 158);
-<<<<<<< HEAD
   padding: 0.5vw 3vw;
-=======
-  padding: 0.5vw 5vw;
->>>>>>> 5392a2e5d4364cb0bc2d96d15a6041f0e32404ba
   font-size: 1.2vw;
   border-radius: 0.2vw;
   margin: 0.2vw;

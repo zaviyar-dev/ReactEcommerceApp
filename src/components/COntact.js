@@ -45,7 +45,7 @@ const COntact = () => {
         <div id="contact-container">
             <form method='POST'>
                 <div class="contact-box">
-                    <input value={userData.name} autoComplete='off' onChange={getUserData} type="text" id="name" name="name" placeholder="Enter Full Name" />
+                    <input value={userData.name} autoComplete="off" onChange={getUserData} type="text" id="name" name="name" placeholder="Enter Full Name" />
                     <input value={userData.email} type="email" autoComplete='off' onChange={getUserData} id="email" name="email" placeholder="Enter Your Email" />
                     <textarea value={userData.msg} name="msg" autoComplete='off' onChange={getUserData} id="textarea" cols="30" rows="15"
                         placeholder="Write a Message For Us"></textarea>
