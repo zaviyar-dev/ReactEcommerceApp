@@ -1,6 +1,6 @@
 import { useState, React } from 'react'
-import { filterData } from './data'
-import productData from './data'
+import { filterData } from '../components/data'
+import productData from '../components/data'
 import { useCart } from "react-use-cart"
 import FilterListRoundedIcon from '@material-ui/icons/FilterListRounded';
 

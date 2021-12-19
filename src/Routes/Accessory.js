@@ -1,6 +1,6 @@
 import React from 'react'
-import data from './data'
-import Catagory from './Catagory'
+import data from '../components//data'
+import Catagory from '../components/Catagory'
 import { CartProvider } from "react-use-cart"
 
 const Accessory = () => {

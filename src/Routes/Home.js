@@ -1,6 +1,6 @@
 import React from 'react'
-import CateroryCard from './CateroryCard'
-import Product from './Product'
+import CateroryCard from '../components/CateroryCard'
+import Product from '../components/Product'
 import { CartProvider } from "react-use-cart"
 
 const Home = () => {
