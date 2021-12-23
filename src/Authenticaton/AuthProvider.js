@@ -3,7 +3,7 @@ import {useHistory} from 'react-router-dom'
 import {auth} from '../utils/firebase/indexxx'
 
 
-const authContext = createContext(null)
+const authContext = createContext(null) // !creating a context of user data from database
 
 const AuthProvider = ({children}) => {
 const history = useHistory()   
@@ -13,12 +13,13 @@ useEffect(()=>{
         setuser(user)
     })
 }, [])
+
 const logout = () => {
     auth.signOut().then(()=>{
         setuser(null)
         history.push('./login')
     })
-}
+} // !logout function
     return (
         <authContext.Provider value={{user, logout}}>
             {children}

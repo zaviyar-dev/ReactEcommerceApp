@@ -9,7 +9,7 @@ const Home = () => {
 
     useEffect(() => {
         window.scrollTo(0, 0)
-      }, [])
+      }, []) // ! scroll to top of the page everytime user come in thi page
 
       const history = useHistory()
       const {user} = useContext(authContext)
@@ -18,7 +18,7 @@ const Home = () => {
               history.push('/login')
           }
           
-      }, [user, history])
+      }, [user, history]) // ! checking if user has not loged in then it redirect user to login page
     return (
         <>
             <div className="custom-home-container">

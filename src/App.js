@@ -37,7 +37,6 @@ const App = () => {
               <productValues.Provider value={products.productDataForOverview}>
                 <Home />
               </productValues.Provider>
-
         </Route>
         <Route exact path='/women' component={Women} />
         <Route exact path='/men' component={Men} />

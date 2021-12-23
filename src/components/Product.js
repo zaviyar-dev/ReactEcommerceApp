@@ -5,9 +5,8 @@ import { productValues } from '../App'
 
 const Product = (props) => {
     const { addItem } = useCart();
-    // const productData = useContext(productValues)
+    
     const [searchTerm, setSearchTerm] = useState('')
-    // productData.filter((curVal) => { return curVal.text.includes(searchTerm) })
     return (
         <>
             <productValues.Consumer>

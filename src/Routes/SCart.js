@@ -11,21 +11,21 @@ const SCart = () => {
               history.push('/login')
           }
           
-      }, [user, history])
+      }, [user, history]) // ! checking if user has not loged in then it redirect user to login page
 
     useEffect(() => {
         window.scrollTo(0, 0)
-      }, [])
+      }, []) // ! scroll to top of the page everytime user come in thi page
+
     const {
         isEmpty,
-        totalUniqueItems,
         items,
-        totalItems,
         cartTotal,
         updateItemQuantity,
         removeItem,
         emptyCart,
-    } = useCart();
+    } = useCart(); //! destructuring variables or function from useCart()
+
     if (isEmpty) {
         return <h1 className="feature-container">Your Cart is Empty</h1>
     }

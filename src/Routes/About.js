@@ -2,9 +2,11 @@ import {React,useEffect} from 'react'
 
 
 const About = (props) => {
+    
     useEffect(() => {
         window.scrollTo(0, 0)
-      }, [])
+      }, []) // ! scroll to top of the page everytime user come in thi page
+
     return (
         <>
             <div className="about-continer">

@@ -9,16 +9,18 @@ import CircularProgress from '@mui/material/CircularProgress';
 
 const Login = () => {
 
-  const [showHide, setShowHide] = useState(true)
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, []); // ! scroll to top of the page everytime user come in thi page
+
+  const [showHide, setShowHide] = useState(true) //!for changing state for showing and hiding password
+
   const {
     setError,
     clearErrors,
-    formState: { errors, isSubmitting },
+    formState: { errors },
   } = useForm();
 
-  useEffect(() => {
-    window.scrollTo(0, 0);
-  }, []);
 
   
   const [spinner, setspinner] = useState(true)
@@ -29,15 +31,18 @@ const Login = () => {
     password: "",
   });
 
-  // * userData data from input fields
+
   const getData = (e) => {
     let naame = e.target.name;
     let value = e.target.value;
     setUserData({ ...userData, [naame]: value });
-  };
-  const { email, password } = userData;
+  };   // ! getting user data data from input fields
+
+
+  const { email, password } = userData; // !object destructuring
   const history = useHistory();
 
+  //! Login function
   const loginin = (e) => {
     setspinner(false)
     clearErrors('LOG_IN_ERROR') 
@@ -54,14 +59,15 @@ const Login = () => {
         });
       });
   };
+
+
   const {user} = useContext(authContext)
-  // console.log(user)
   useEffect(() => {
     if (user) {
-      // console.log(authUser);
       history.push("/");
     }
-  }, [user, history]);
+  }, [user, history]); //! checking if user already loged in then redirect to home page
+
   return (
     <form onSubmit={loginin}>
       <div className="login-page-main-container">

@@ -11,10 +11,11 @@ import {auth} from '../utils/firebase/indexxx'
 import {authContext} from '../Authenticaton/AuthProvider'
 
 const SingupPage = () => {
-    const [showHidePass, setshowHidePass] = useState(true)
-    const [showHideConfirmPass, setshowHideConfirmPass] = useState(true)
-    const [spinner, setspinner] = useState(true)
+    const [showHidePass, setshowHidePass] = useState(true) //!for changing state for showing and hiding password
+    const [showHideConfirmPass, setshowHideConfirmPass] = useState(true) //!for changing state for showing and hiding password
+    const [spinner, setspinner] = useState(true) // !showing and hide spinner
     const history = useHistory()
+
     const {
         register,
         handleSubmit,
@@ -24,7 +25,7 @@ const SingupPage = () => {
         },
         setError,
         clearErrors
-    } = useForm({ resolver: signResolver });
+    } = useForm({ resolver: signResolver }); //! structuring elements from react-hook-form
 
     const onSubmit = ({email,password}) => {
         //!Firebase
@@ -41,13 +42,11 @@ const SingupPage = () => {
     }
 
     const {user} = useContext(authContext)
-    // console.log(user);
-
     useEffect(() => {
         if(user){
             history.push('/')
         }
-    }, [user,history])
+    }, [user,history]) //! checking if user already loged in then redirect to home page
     return (
         <div className="main-signup-container">
             <form onSubmit={handleSubmit(onSubmit)}>

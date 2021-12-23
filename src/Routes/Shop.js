@@ -7,6 +7,10 @@ import FilterListRoundedIcon from '@material-ui/icons/FilterListRounded';
 import {authContext} from '../Authenticaton/AuthProvider'
 
 const Shop = (props) => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, []) // ! scroll to top of the page everytime user come in thi page
+
     const history = useHistory()
       const {user} = useContext(authContext)
       useEffect(() => {
@@ -14,16 +18,13 @@ const Shop = (props) => {
               history.push('/login')
           }
           
-      }, [user, history])
+      }, [user, history]) // ! checking if user has not loged in then it redirect user to login page
 
-    useEffect(() => {
-        window.scrollTo(0, 0)
-      }, [])
-    const { addItem } = useCart();
+
+    const { addItem } = useCart(); //! destructuring additem from useCart()
     const [searchTerm, setSearchTerm] = useState('')
     const [filterClass, setFilterClass] = useState('filter-page2')
     const [products, setProducts] = useState(productData.productDataForAll)
-    // setProducts(products)
     const showFilterPage = (e) => {
         e.preventDefault()
         if (filterClass === 'filter-page2') {

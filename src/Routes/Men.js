@@ -6,7 +6,8 @@ import { CartProvider } from "react-use-cart"
 const Men = () => {
     useEffect(() => {
         window.scrollTo(0, 0)
-      }, [])
+      }, [])   // ! getting user data data from input fields
+      
     const men = data.productDataForAll.filter((val)=>val.catagory=='men')
     return (
         <div>

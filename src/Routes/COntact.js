@@ -1,22 +1,28 @@
 import {React, useEffect , useState} from 'react'
 
 const COntact = () => {
+
     useEffect(() => {
         window.scrollTo(0, 0)
-      }, [])
+      }, []) // ! scroll to top of the page everytime user come in thi page
+
     const [userData, setUserData] = useState({
         name: '',
         email: '',
         msg: '',
-    })
+    }) //! variables for storing input data 
+
     const getUserData = (e) => {
         let name = e.target.name
         let value = e.target.value
         setUserData({ ...userData, [name]: value })
-    }
+    } // !getting user data from input fields
+
     const postData = async (e) => {
-        e.preventDefault()
-        const { name, email, msg } = userData // object destructuring
+        e.preventDefault() // !avoiding refresh of page after submittion
+
+        const { name, email, msg } = userData //! object destructuring
+
         if (name && email && msg) {
             const res = await fetch('https://mystoredb-790e2-default-rtdb.firebaseio.com/contactform.json',
             {
@@ -30,7 +36,8 @@ const COntact = () => {
                     msg,
                 }),
             }
-        )
+        ) //! storing data in firebase database and checkig did user fill every field
+
         if (res) {
             alert(`Thanks ${name} for write message for us`)
         }
@@ -43,7 +50,7 @@ const COntact = () => {
             alert('Please fill every field')
         }
         
-    }
+    } //! if user left blank any field it show pop that 'please fill every fields' 
     return (
         <div id="contact-container">
             <form method='POST'>

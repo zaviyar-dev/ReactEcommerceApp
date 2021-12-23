@@ -1,6 +1,8 @@
 import React from 'react'
 import { useCart } from "react-use-cart"
 
+//! this is a catory component 
+
 const Catagory = (props) => {
     const { addItem } = useCart();
     if (!props.men && !props.accessory) {
