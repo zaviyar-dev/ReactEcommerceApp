@@ -1,7 +1,10 @@
-import React from 'react'
+import {React,useEffect} from 'react'
 
 
 const About = (props) => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
     return (
         <>
             <div className="about-continer">

@@ -78,13 +78,6 @@ body{
   width: 24vw;
   height: 5vw;
 }
-.signup-input-fields input{
-  border: none;
-  outline: none;
-  border-bottom: 1.5px solid #867b7b;
-  height: 2vw;
-  width: 18vw;
-}
 .signup-btns{
   margin-top: 1vw;
 }
@@ -102,6 +95,9 @@ body{
   flex-direction: row;
   width: 17vw;
   justify-content: space-between;
+}
+.sign-btn > button{
+  border: none;
 }
 .signIn{
   background-color: #e6e2e2!important;

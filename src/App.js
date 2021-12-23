@@ -1,7 +1,8 @@
-import React from 'react'
+import { React, useContext } from 'react'
 import {
   Switch,
-  Route
+  Route,
+  Redirect
 } from "react-router-dom";
 import Header from './components/Header'
 import Home from './Routes/Home'
@@ -23,22 +24,24 @@ import { CartProvider } from "react-use-cart"
 import Women from './Routes/Women'
 import Men from './Routes/Men'
 import Accessory from './Routes/Accessory'
+
 const productValues = createContext()
 const App = () => {
   return (
     <>
       <Header />
       <Switch>
-        <Route exact path='/signup' component={SingupPage}> </Route>
-        <Route exact path='/' component={LoginPage}></Route>
-        <Route exact path='/home'>
-          <productValues.Provider value={products.productDataForOverview}>
-            <Home />
-          </productValues.Provider>
+        <Route exact path='/signup' component={SingupPage} />
+        <Route exact path='/login' component={LoginPage} />
+        <Route exact path='/' >
+              <productValues.Provider value={products.productDataForOverview}>
+                <Home />
+              </productValues.Provider>
+
         </Route>
-        <Route exact path='/women' component={Women}></Route>
-        <Route exact path='/men' component={Men}></Route>
-        <Route exact path='/access' component={Accessory}></Route>
+        <Route exact path='/women' component={Women} />
+        <Route exact path='/men' component={Men} />
+        <Route exact path='/access' component={Accessory} />
         <Route exact path='/shop'>
           <CartProvider>
             <Shop productDataForAll={products.productDataForAll} />
@@ -50,7 +53,7 @@ const App = () => {
         <Route exact path='/about'>
           <About aboutData={aboutData} />
         </Route>
-        <Route exact path='/contact' component={COntact}></Route>
+        <Route exact path='/contact' component={COntact} />
         <Route exact path='/cart'>
           <CartProvider>
             <Cart />

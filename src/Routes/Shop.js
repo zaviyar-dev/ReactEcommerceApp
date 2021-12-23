@@ -1,10 +1,24 @@
-import { useState, React } from 'react'
+import { useState, React, useEffect, useContext } from 'react'
+import { useHistory } from 'react-router-dom'
 import { filterData } from '../components/data'
 import productData from '../components/data'
 import { useCart } from "react-use-cart"
 import FilterListRoundedIcon from '@material-ui/icons/FilterListRounded';
+import {authContext} from '../Authenticaton/AuthProvider'
 
 const Shop = (props) => {
+    const history = useHistory()
+      const {user} = useContext(authContext)
+      useEffect(() => {
+          if (!user) {
+              history.push('/login')
+          }
+          
+      }, [user, history])
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
     const { addItem } = useCart();
     const [searchTerm, setSearchTerm] = useState('')
     const [filterClass, setFilterClass] = useState('filter-page2')

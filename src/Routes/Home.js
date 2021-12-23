@@ -1,9 +1,24 @@
-import React from 'react'
+import {React,useEffect, useContext} from 'react'
+import {useHistory} from 'react-router-dom'
 import CateroryCard from '../components/CateroryCard'
 import Product from '../components/Product'
 import { CartProvider } from "react-use-cart"
+import {authContext} from '../Authenticaton/AuthProvider'
 
 const Home = () => {
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
+
+      const history = useHistory()
+      const {user} = useContext(authContext)
+      useEffect(() => {
+          if (!user) {
+              history.push('/login')
+          }
+          
+      }, [user, history])
     return (
         <>
             <div className="custom-home-container">

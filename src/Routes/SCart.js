@@ -1,7 +1,21 @@
-import React from 'react'
+import {React,useEffect, useContext} from 'react'
+import {useHistory} from 'react-router-dom'
+import {authContext} from '../Authenticaton/AuthProvider'
 import { useCart } from "react-use-cart"
 
 const SCart = () => {
+    const history = useHistory()
+      const {user} = useContext(authContext)
+      useEffect(() => {
+          if (!user) {
+              history.push('/login')
+          }
+          
+      }, [user, history])
+
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
     const {
         isEmpty,
         totalUniqueItems,

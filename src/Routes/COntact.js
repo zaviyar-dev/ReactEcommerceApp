@@ -1,6 +1,9 @@
-import React, { useState } from 'react'
+import {React, useEffect , useState} from 'react'
 
 const COntact = () => {
+    useEffect(() => {
+        window.scrollTo(0, 0)
+      }, [])
     const [userData, setUserData] = useState({
         name: '',
         email: '',
