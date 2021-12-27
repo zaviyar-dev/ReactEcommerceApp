@@ -54,6 +54,7 @@ const Login = () => {
         setspinner(true)
       })
       .catch((err) => {
+        setspinner(true)
         setError("LOG_IN_ERROR", {
           message: err.message,
         });
@@ -79,7 +80,9 @@ const Login = () => {
             {errors.LOG_IN_ERROR && errors.LOG_IN_ERROR.message}
           </p>
           <div className="login-inputs-fields">
+          <span>
             <input
+              sx={{marginTop:'1vw'}}
               type="text"
               name="email"
               id="email"
@@ -88,7 +91,8 @@ const Login = () => {
               value={userData.email}
               onChange={getData}
             />
-            
+            </span>
+            <span>
             { 
               showHide ?
               <>
@@ -101,7 +105,7 @@ const Login = () => {
               value={userData.password}
               onChange={getData}
             />
-            <VisibilityIcon onClick={()=>setShowHide(false)} style={{position:'relative', bottom:'2.4vw', left:'22vw'}} />
+            <VisibilityIcon onClick={()=>setShowHide(false)} />
             </> :
               <>
                <input
@@ -113,10 +117,11 @@ const Login = () => {
               value={userData.password}
               onChange={getData}
             />
-            <VisibilityOffIcon onClick={()=>setShowHide(true)} style={{position:'relative', bottom:'2.4vw', left:'22vw'}} />
+            <VisibilityOffIcon onClick={()=>setShowHide(true)} />
             </> 
             }
-            <button className="comman-btn login-btn" style={{ border: "none" }}>
+            </span>
+            <button className="comman-btn login-btn" style={{ border: "none", marginTop:'1vw' }}>
               Continue With Email
             </button>
           </div>
@@ -129,7 +134,7 @@ const Login = () => {
             </a>
           </div>
           <a className="signup-link" href="/signup">
-            create account
+            Register Here
           {spinner?<p></p>:<p> <CircularProgress sx={{position:'relative', left:'2vw'}} /></p>}
           </a>
         </div>

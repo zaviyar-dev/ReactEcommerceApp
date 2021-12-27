@@ -35,6 +35,7 @@ const SingupPage = () => {
             setspinner(true)
             history.push('/')
         }).catch((err)=>{
+            setspinner(true)
             setError('API_ERROR',{
                 message: err.message
             })

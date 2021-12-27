@@ -691,3 +691,224 @@
   }
   }
 
+
+
+
+  /* !LOGIN PAGE */
+  @media only screen and (min-width: 700px) and (max-width:1100px){
+    .login-page-container {
+      width: 55vw;
+      height: 44vw;
+    }
+    .login-inputs-fields{
+      width: 42vw;
+      
+    }
+    .login-inputs-fields button{
+      padding: 1vw 1.9vw!important;
+    }
+    .break-line {
+      margin-top: 3vw;
+    }
+    .login-with-google > a{
+      width: 42vw;
+    }
+
+  }
+  @media only screen and (min-width: 600px) and (max-width:700px){
+    .login-page-container {
+      height: 60vw;
+      width: 77vw;
+      margin-top: 12vw;
+    }
+    .login-heading h1{
+      font-size: 1.6rem;
+    }
+    .login-inputs-fields{
+      width: 58vw;
+      
+    }
+    .login-inputs-fields input {
+      line-height: 5vw; 
+    }
+    .login-inputs-fields button{
+      padding: 1vw 1.9vw!important;
+      font-size: 0.9rem;
+    }
+    .break-line {
+      margin-top: 11vw;
+    }
+    .login-with-google > a{
+      width: 58vw;
+      padding: 1vw 1.9vw!important;
+      font-size: 0.9rem;
+    }
+
+  }
+  @media only screen and (min-width: 400px) and (max-width:600px){
+    .login-page-container {
+      height: 75vw;
+      width: 77vw;
+      margin-top: 20vw;
+    }
+    .login-heading h1{
+      font-size: 1.6rem;
+    }
+    .login-inputs-fields{
+      width: 65vw;
+      margin-top: 7vw;
+    }
+    .login-inputs-fields input {
+      line-height: 5vw; 
+    }
+    .login-inputs-fields button{
+      padding: 1vw 1.9vw!important;
+      font-size: 0.9rem;
+    }
+    .break-line {
+      margin-top: 12vw;
+    }
+    .login-with-google > a{
+      width: 65vw;
+      padding: 1vw 1.9vw!important;
+      font-size: 0.9rem;
+    }
+
+  }
+  @media only screen and (min-width: 200px) and (max-width:400px){
+    .login-page-container {
+      height: 85vw;
+      width: 77vw;
+      margin-top: 30vw;
+    }
+    .login-heading h1{
+      font-size: 1.6rem;
+    }
+    .login-inputs-fields{
+      width: 65vw;
+      margin-top: 7vw;
+    }
+    .login-inputs-fields input {
+      line-height: 7vw; 
+    }
+    .login-inputs-fields button{
+      padding: 1vw 1.9vw!important;
+      font-size: 0.9rem;
+    }
+    .break-line {
+      margin-top: 19vw;
+    }
+    .login-with-google > a{
+      width: 65vw;
+      padding: 1vw 1.9vw!important;
+      font-size: 0.9rem;
+    }
+
+  }
+
+
+
+  /* !SignUP page */
+  @media only screen and (min-width: 900px) and (max-width:1050px){
+    .singup-container {
+      width: 74vw;
+      height: 55vw;
+      margin-top: 5vw;
+    }
+    .singup-img-part {
+      height: 55vw;
+    }
+    .singup-img-part::before{
+      width: 44.5vw;
+      height: 55vw;
+    }
+    .singup-details-part-items{
+      height: 45vw;
+    }
+  }
+  @media only screen and (min-width: 750px) and (max-width:900px){
+    .singup-container {
+      width: 85vw;
+      height: 65vw;
+      margin-top: 5vw;
+    }
+    .singup-img-part {
+      height: 55vw;
+    }
+    .singup-img-part::before{
+      width: 51vw;
+      height: 65vw;
+    }
+    .singup-details-part-items{
+      height: 60vw;
+    }
+    .signup-input-fields{
+      width: 30vw;
+    }
+  }
+  @media only screen and (min-width: 550px) and (max-width:750px){
+    .singup-container {
+      width: 95vw;
+      height: 75vw;
+      margin-top: 10vw;
+    }
+    .singup-img-part {
+      height: 75vw;
+    }
+    .singup-img-part::before{
+      width: 55vw;
+      height: 75vw;
+    }
+    .singup-details-part-items{
+      height: 70vw;
+    }
+    .signup-input-fields{
+      width: 37vw;
+    }
+    .sign-btn{
+      width: 32vw;
+    }
+    .signup-check-box-btn{
+      width: 35vw;
+    }
+  }
+  @media only screen and (min-width: 450px) and (max-width:550px){
+    .singup-container {
+      width: 95vw;
+      height: 85vw;
+      margin-top: 14vw;
+    }
+    .singup-img-part {
+      height: 85vw;
+    }
+    .singup-img-part::before{
+      width: 55vw;
+      height: 85vw;
+    }
+    .singup-details-part-items{
+      height: 80vw;
+    }
+    .signup-input-fields{
+      width: 37vw;
+    }
+  }
+  @media only screen and (min-width: 350px) and (max-width:450px){
+    .singup-container {
+      width: 95vw;
+      height: 95vw;
+      margin-top: 22vw;
+    }
+    .singup-img-part {
+      height: 95vw;
+    }
+    .singup-img-part::before{
+      width: 55vw;
+      height: 95vw;
+    }
+    .singup-details-part-items{
+      height: 90vw;
+    }
+    .signup-input-fields{
+      width: 37vw;
+    }
+  }

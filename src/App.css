@@ -20,7 +20,7 @@ body{
 
 /* SIGNUP PAGE */
 .main-signup-container{
-  margin-top: 5vw;
+ margin-bottom: 2vw;
  width: 100%;
  display: flex;
  justify-content: center;
@@ -66,7 +66,8 @@ body{
 .singup-details-part-items{
   display: flex;
   flex-direction: column;
-  height: 38vw;
+  justify-content: space-around;
+  height: 35vw;
 }
 .signupHeading{
   margin-bottom: 3vw;
@@ -110,7 +111,6 @@ body{
   width: 100%;
   display: flex;
   justify-content: center;
-  align-items: center;
 }
 .login-page-container{
   width: 35vw;
@@ -120,12 +120,16 @@ body{
   flex-direction: column;
   align-items: center;
   border-radius: 0.7vw;
+  margin-top: 5vw;
 }
 .login-heading{
   display: flex;
   align-items: center;
   justify-content: center;
   height: 8vw;
+}
+.login-heading h1{
+  font-size: 2rem;
 }
 .login-inputs-fields{
   display: flex;
@@ -134,11 +138,22 @@ body{
   height: 10vw;
   justify-content: space-between;
 }
-.login-inputs-fields > input{
-  border: 1.5px solid #867b7b;
+.login-inputs-fields input{
+  border: none;
   line-height: 2.5vw;
   outline: none;
   border-radius: 0.3vw;
+  width: 100%;
+}
+.login-inputs-fields span{
+  border: 1.5px solid #867b7b;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.login-inputs-fields span:nth-child(2){
+  margin-top: 1vw;
 }
 .login-btn{
   position: unset!important;
@@ -1009,7 +1024,8 @@ td{
  
  /* ###############CONTACT############# */
 #contact-container{
-  margin-top: 9vw;
+  margin-top: 1vw;
+  margin-bottom: 5vw;
   z-index: -1; 
   height: 60%;
   display: flex;

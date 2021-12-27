@@ -1,8 +1,7 @@
-import { React, useContext } from 'react'
+import { React } from 'react'
 import {
   Switch,
   Route,
-  Redirect
 } from "react-router-dom";
 import Header from './components/Header'
 import Home from './Routes/Home'
